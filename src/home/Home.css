@@ -64,7 +64,7 @@ input {
 
 .label-and-filter label {
     background-color: #282c34; /* Choose your desired background color */
-    color: rgb(255, 255, 255);
+    color: 	#FFD700;
     padding: 10px; /* Add some padding to make it visually appealing */
     border-radius: 5px; /* Add rounded corners if you like */
 
@@ -99,7 +99,7 @@ button {
     padding: 10px 20px;
     font-size: 1rem;
     background-color: #282c34;
-    color: #fff;
+    color: 	#FFD700;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -136,7 +136,7 @@ button:hover {
 }
 
 .locked-champions p {
-    color: rgb(255, 255, 255);
+    color: 	#FFD700;
 }
 
 .champion-list {
@@ -146,7 +146,7 @@ button:hover {
 }
 
 .champion-item h3 {
-    color: rgb(161, 149, 0);
+    color: 	#FFD700;
     margin-top: 1px;
     margin-bottom: 10px;
     font-size: 1.4rem;

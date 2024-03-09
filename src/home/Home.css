@@ -1,0 +1,251 @@
+/* Home.css */
+body {
+    background-image: url('https://r4.wallpaperflare.com/wallpaper/626/579/635/league-of-legends-old-school-heroes-hd-league-of-legends-characters-wallpaper-1910985d413afd4bb67768bf3031e65d.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Mobile-friendly styles for h1 */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+h2 {
+    color: #6fa6d6;
+    padding: 5px;
+}
+
+p {
+    text-align: center;
+    margin: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+#gamerName {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align items vertically in the center */
+    margin-bottom: 20px; /* Add margin to separate from other elements */
+}
+
+/* Center the label and filter */
+.label-and-filter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.label-and-filter label {
+    background-color: #282c34; /* Choose your desired background color */
+    color: rgb(255, 255, 255);
+    padding: 10px; /* Add some padding to make it visually appealing */
+    border-radius: 5px; /* Add rounded corners if you like */
+
+}
+
+/* Apply styles to the filter select element */
+.filter-select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+/* Center the ROLL button */
+.roll-button {
+    text-align: center;
+    margin-top: 20px; /* Add a gap between label/filter and ROLL button */
+    margin-bottom: 10px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+
+}
+
+.roll-button:hover {
+    background-color: #383b44;
+
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #282c34;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #383b44;
+}
+
+/* Container for REROLL and LOCK IN buttons */
+.button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Style for both REROLL and LOCK IN buttons */
+.button-container button {
+    width: 80%;
+    padding: 10px;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Add a small gap between REROLL and LOCK IN buttons */
+.button-container button + button {
+    margin-left: 5px; /* Adjust as needed */
+}
+
+/* Hover effect for LOCK IN button */
+.button-container button:last-child:hover {
+    background-color: #0f8c2b; /* Adjust the color as needed */
+}
+
+.locked-champions p {
+    color: rgb(255, 255, 255);
+}
+
+.champion-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.champion-item h3 {
+    color: rgb(161, 149, 0);
+    margin-top: 1px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.champion-item {
+    background-color: #282c34;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.champion-item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 1px;
+}
+
+/* Add styles for the active lock-in button */
+.lock-in-button {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Style for Blue Side lock-in button */
+/* Style for Blue Side lock-in button */
+.lock-in-button.blue {
+    background-color: rgb(24, 97, 154);
+}
+
+/* Style for Red Side lock-in button */
+.lock-in-button.red {
+    background-color: #ff6961;
+}
+
+/* Style for inactive lock-in button */
+.lock-in-button:not(.active) {
+    background-color: #282c34; /* Set the same color as the roll button */
+}
+
+.locked-champion {
+    background-color: #282c34;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.locked-champions {
+    display: flex;
+    flex-basis: 50%;
+    padding: 5px;
+}
+
+/* Add styles for the Blue Side and Red Side sections */
+.locked-champions.both-side {
+    display: flex;
+    justify-content: space-between; /* Add space between Blue and Red Side */
+    margin-top: 20px;
+}
+
+/* Updated styles for Blue Side */
+.locked-champions.blue-side {
+    align-items: flex-start;
+    flex-basis: 50%; /* Set the width to 50% of the container */
+    flex-direction: column;
+}
+
+/* Updated styles for Red Side */
+.locked-champions.red-side {
+    align-items: flex-end;
+    flex-basis: 50%; /* Set the width to 50% of the container */
+    flex-direction: column;
+    margin-left: auto; /* Push the content to the right */
+}
+
+/* Ensure the first red champion goes all the way to the right */
+.locked-champions.red-side .locked-champion:first-child {
+    margin-left: 0; /* Reset the margin for the first child */
+}
+
+/* Margin for .locked-champions.both-side when only one side is locked */
+.locked-champions.both-side:not(:only-child) {
+    margin-right: 0; /* Adjust as needed */
+}
+
+
+.locked-champions.blue-side h2 {
+    color: #6fa6d6; /* Blue color for the Blue Side header */
+}
+
+.locked-champions.red-side h2 {
+    color: #ff6961; /* Red color for the Red Side header */
+    padding-right: 27px;
+}

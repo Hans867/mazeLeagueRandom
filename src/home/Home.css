@@ -132,7 +132,7 @@ button:hover {
 
 /* Hover effect for LOCK IN button */
 .button-container button:last-child:hover {
-    background-color: #0f8c2b; /* Adjust the color as needed */
+    background-color: #4956fc; /* Adjust the color as needed */
 }
 
 .locked-champions p {

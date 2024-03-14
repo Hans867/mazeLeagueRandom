@@ -86,11 +86,13 @@ input {
     margin-bottom: 10px;
     padding: 15px 30px;
     font-size: 1.2rem;
+    color: #9999ad;
 
 }
 
 .roll-button:hover {
     background-color: #383b44;
+    color: white;
 
 }
 
@@ -124,6 +126,11 @@ button:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    color: #9999ad;
+}
+
+.button-container button:hover {
+    color: white;
 }
 
 /* Add a small gap between REROLL and LOCK IN buttons */
@@ -133,7 +140,7 @@ button:hover {
 
 /* Hover effect for LOCK IN button */
 .button-container button:last-child:hover {
-    background-color: #4956fc; /* Adjust the color as needed */
+    background-color: #005A82; /* Adjust the color as needed */
 }
 
 .locked-champions p {
@@ -184,16 +191,19 @@ button:hover {
 /* Style for Blue Side lock-in button */
 .lock-in-button.blue {
     background-color: rgb(24, 97, 154);
+    color: white;
 }
 
 /* Style for Red Side lock-in button */
 .lock-in-button.red {
     background-color: #ff6961;
+    color: white;
 }
 
 /* Style for inactive lock-in button */
 .lock-in-button:not(.active) {
     background-color: #282c34; /* Set the same color as the roll button */
+    color: #9999ad;
 }
 
 .locked-champion {

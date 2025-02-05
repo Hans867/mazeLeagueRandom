@@ -45,6 +45,10 @@ const bottomChampions = [
         // Other champion attributes...
     },
     {
+        name: "Mel",
+        // Other champion attributes...
+    },
+    {
         name: "Miss Fortune",
         // Other champion attributes...
     },

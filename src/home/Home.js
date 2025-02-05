@@ -205,7 +205,7 @@ const Home = () => {
                             <div key={index} className="locked-champion">
                                 <p>{` ${lockedChampion.playerName}`}</p>
                                 <img
-                                    src={`https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/${lockedChampion.champion.image.full}`}
+                                    src={`https://ddragon.leagueoflegends.com/cdn/15.3.1/img/champion/${lockedChampion.champion.image.full}`}
                                     alt={`${lockedChampion.champion.name} Champion`}
                                 />
                             </div>
@@ -219,7 +219,7 @@ const Home = () => {
                             <div key={index} className="locked-champion">
                                 <p>{` ${lockedChampion.playerName}`}</p>
                                 <img
-                                    src={`https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/${lockedChampion.champion.image.full}`}
+                                    src={`https://ddragon.leagueoflegends.com/cdn/15.3.1/img/champion/${lockedChampion.champion.image.full}`}
                                     alt={`${lockedChampion.champion.name} Champion`}
                                 />
                             </div>

@@ -8,7 +8,7 @@ function ListChamps() {
     const [champions, setChampions] = useState([]);
 
     useEffect(() => {
-        axios.get('https://ddragon.leagueoflegends.com/cdn/14.1.1/data/en_US/champion.json')
+        axios.get('https://ddragon.leagueoflegends.com/cdn/15.3.1/data/en_US/champion.json')
             .then(response => {
                 console.log('Champion data fetched successfully:', response.data);
                 const championsData = response.data.data;

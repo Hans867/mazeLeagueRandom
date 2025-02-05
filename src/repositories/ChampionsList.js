@@ -7,7 +7,7 @@ function ChampionList({ champions, onReroll, onLockIn }) {
                 <div key={champion.key} className="champion-item">
                     <h3>{champion.name}</h3>
                     <img
-                        src={`https://ddragon.leagueoflegends.com/cdn/14.1.1/img/champion/${champion.image.full}`}
+                        src={`https://ddragon.leagueoflegends.com/cdn/15.3.1/img/champion/${champion.image.full}`}
                         alt={`${champion.name} Champion`}
                     />
                     <div className="button-container">

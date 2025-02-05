@@ -97,6 +97,10 @@ const midChampions = [
         // Other champion attributes...
     },
     {
+        name: "Mel",
+        // Other champion attributes...
+    },
+    {
         name: "Naafiri",
         // Other champion attributes...
     },

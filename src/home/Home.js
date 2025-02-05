@@ -26,7 +26,7 @@ const Home = () => {
     const fetchChampions = async () => {
         try {
             const response = await fetch(
-                'https://ddragon.leagueoflegends.com/cdn/14.1.1/data/en_US/champion.json'
+                'https://ddragon.leagueoflegends.com/cdn/15.3.1/data/en_US/champion.json'
             );
             const data = await response.json();
             const championData = Object.values(data.data);

@@ -9,6 +9,14 @@ const topChampions = [
         // Other champion attributes...
     },
     {
+        name: "Ambessa",
+        // Other champion attributes...
+    },
+    {
+        name: "Aurora",
+        // Other champion attributes...
+    },
+    {
         name: "Camille",
         // Other champion attributes...
     },
